@@ -2,15 +2,17 @@ document.addEventListener('DOMContentLoaded',()=>{
     let sectionGraffiti = document.querySelector('#graffiti');
     let sectionCaps = document.querySelector('#caps');
     let sectionPro = document.querySelector('#pro');
+    let sectionLimitedEdition = document.querySelector('#limitedEdition');
 
     let sectionGraffitiSM = document.querySelector('#graffitiSM');
     let sectionCapsSM = document.querySelector('#capsSM');
     let sectionProSM = document.querySelector('#proSM');
+    let sectionLimitedEditionSM = document.querySelector('#limitedEditionSM');
 
     let btnGraffiti = document.querySelector('.btnGraffiti');
     let btnCaps = document.querySelector('.btnCaps');
     let btnPro = document.querySelector('.btnPro');
-    let btnEL = document.querySelector('.btnEL');
+    let btnLE = document.querySelector('.btnEL');
 
     
 
@@ -20,30 +22,47 @@ document.addEventListener('DOMContentLoaded',()=>{
         btnCaps.addEventListener('click',(event)=>{
             sectionGraffiti.setAttribute('class','d-none');
             sectionPro.setAttribute('class','d-none');
+            sectionLimitedEdition.setAttribute('class','d-none');
             sectionCaps.setAttribute('class','d-block');
 
             sectionProSM.setAttribute('class','d-none');
             sectionGraffitiSM.setAttribute('class','d-none');
             sectionCapsSM.setAttribute('class','d-none');
+            sectionLimitedEditionSM.setAttribute('class','d-none');
         })
         btnGraffiti.addEventListener('click',(event)=>{
             sectionCaps.setAttribute('class','d-none');
             sectionPro.setAttribute('class','d-none');
+            sectionLimitedEdition.setAttribute('class','d-none');
             sectionGraffiti.setAttribute('class','d-block');
 
             sectionProSM.setAttribute('class','d-none');
             sectionCapsSM.setAttribute('class','d-none');
             sectionGraffitiSM.setAttribute('class','d-none');
+            sectionLimitedEditionSM.setAttribute('class','d-none');
         })
         btnPro.addEventListener('click',(event)=>{
             sectionCaps.setAttribute('class','d-none');
             sectionGraffiti.setAttribute('class','d-none');
+            sectionLimitedEdition.setAttribute('class','d-none');
             sectionPro.setAttribute('class','d-block');
 
             sectionProSM.setAttribute('class','d-none');
             sectionCapsSM.setAttribute('class','d-none');
             sectionGraffitiSM.setAttribute('class','d-none');
+            sectionLimitedEditionSM.setAttribute('class','d-none');
         })
+        btnLE.addEventListener('click',(event)=>{
+          sectionCaps.setAttribute('class','d-none');
+          sectionGraffiti.setAttribute('class','d-none');
+          sectionPro.setAttribute('class','d-none');
+          sectionLimitedEdition.setAttribute('class','d-block');
+
+          sectionProSM.setAttribute('class','d-none');
+          sectionCapsSM.setAttribute('class','d-none');
+          sectionGraffitiSM.setAttribute('class','d-none');
+          sectionLimitedEditionSM.setAttribute('class','d-none');
+      })
     }
 
     const funcion2 = () => {
@@ -52,29 +71,46 @@ document.addEventListener('DOMContentLoaded',()=>{
                 sectionGraffiti.setAttribute('class','d-none');
                 sectionCaps.setAttribute('class','d-none');
                 sectionPro.setAttribute('class','d-none');
+                sectionLimitedEdition.setAttribute('class','d-none');
 
                 sectionGraffitiSM.setAttribute('class','d-none');
                 sectionCapsSM.setAttribute('class','d-block');
                 sectionProSM.setAttribute('class','d-none');
+                sectionLimitedEditionSM.setAttribute('class','d-none');
             })
             btnGraffiti.addEventListener('click',(event)=>{
                 sectionGraffiti.setAttribute('class','d-none');
                 sectionCaps.setAttribute('class','d-none');
                 sectionPro.setAttribute('class','d-none');
+                sectionLimitedEdition.setAttribute('class','d-none');
                 
                 sectionProSM.setAttribute('class','d-none');
                 sectionCapsSM.setAttribute('class','d-none');
+                sectionLimitedEditionSM.setAttribute('class','d-none');
                 sectionGraffitiSM.setAttribute('class','d-block');
             })
             btnPro.addEventListener('click',(event)=>{
                 sectionCaps.setAttribute('class','d-none');
                 sectionGraffiti.setAttribute('class','d-none');
                 sectionPro.setAttribute('class','d-none');
+                sectionLimitedEdition.setAttribute('class','d-none');
     
                 sectionProSM.setAttribute('class','d-block');
                 sectionCapsSM.setAttribute('class','d-none');
+                sectionLimitedEditionSM.setAttribute('class','d-none');
                 sectionGraffitiSM.setAttribute('class','d-none');
             })
+            btnLE.addEventListener('click',(event)=>{
+              sectionCaps.setAttribute('class','d-none');
+              sectionGraffiti.setAttribute('class','d-none');
+              sectionPro.setAttribute('class','d-none');
+              sectionLimitedEdition.setAttribute('class','d-none');
+  
+              sectionProSM.setAttribute('class','d-none');
+              sectionCapsSM.setAttribute('class','d-none');
+              sectionLimitedEditionSM.setAttribute('class','d-block');
+              sectionGraffitiSM.setAttribute('class','d-none');
+          })
 
        
     }

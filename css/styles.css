@@ -11,9 +11,6 @@ ul{
 a{
 	text-decoration:none;
 }
-.navbar{
-    padding: px;
-}
 .navbar-brand{
     font-family: 'Lobster', cursive;
 }
@@ -82,30 +79,6 @@ a{
 .navbar-nav .nav-link:hover::before {
     transform: scaleX(1);
   }
-/*
-.link-spray:hover{
-    color: rgb(231, 76, 60)!important;
-    border-bottom: 4px solid rgb(231, 76, 60);
-}
-.link-markers:hover{
-    color: #E67E22!important;
-    border-bottom: 4px solid #E67E22;
-}
-.link-accessories:hover{
-    color: #F1C40F!important;
-    border-bottom: 4px solid #F1C40F;
-}
-.link-distribution:hover{
-    color: rgb(46, 204, 113)!important;
-    border-bottom: 4px solid rgb(46, 204, 113);
-}
-
-.link-store:hover{
-    color: #1ABC9C!important;
-    background-color: #F8F9FA;
-    border-bottom: 4px solid #1ABC9C;
-}
-*/
 .link-store{
     background-color: #1ABC9C;
     color: white;
@@ -208,6 +181,9 @@ main{
     height: 85vh;
 
 }
+.i-slider{
+    max-height: 60vh;
+}
 .img-sm-carousel{
     height: 50vh;
     object-fit:contain;
@@ -297,3 +273,15 @@ footer .row:nth-child(1) a:hover{
     color: gray;
     opacity: 1
 }
+
+@media screen and (max-width: 900px) {
+    .i-slider{
+        max-height: 40vh;
+    }
+  }
+  @media screen and (min-width: 901px ) and (max-width: 1200px){
+    .i-slider{
+        max-height: 50vh;
+    }
+  }
+  
